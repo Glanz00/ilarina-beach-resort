@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilarina Beach Resort</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#f8fcff}
+header{background:linear-gradient(rgba(0,80,120,.6),rgba(0,80,120,.6)), url('logo.jpg') center/cover no-repeat;
+color:#fff;text-align:center;padding:80px 20px}
+header img{width:160px;border-radius:50%;background:#fff;padding:10px;margin-bottom:20px}
+nav{background:#0077b6;position:sticky;top:0;z-index:1000}
+nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap}
+nav a{display:block;color:#fff;text-decoration:none;padding:15px 20px;font-weight:bold}
+nav a:hover{background:#023e8a}
+section{max-width:1000px;margin:auto;padding:60px 20px}
+h2{color:#0077b6;margin-bottom:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.contact p{margin:10px 0}
+.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px}
+.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+footer{background:#023e8a;color:#fff;text-align:center;padding:20px}
+.hero-text{max-width:700px;margin:auto}
+.video-container video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+</style>
+</head>
+<body>
+
+<header id="home">
+    <img src="ilarina.jpg" alt="Ilarina Beach Resort Logo">
+    <div class="hero-text">
+        <h1>Ilarina Beach Resort</h1>
+        <p>Your Perfect Getaway in Bagac, Bataan</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#video">Promo Video</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Ilarina Beach Resort is a peaceful destination located in Sitio Caragman, Barangay Banawang,
+        Bagac, Bataan. Our mission is to provide guests with a relaxing, clean, and affordable beach
+        experience where families and friends can create unforgettable memories.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Products and Services</h2>
+    <div class="cards">
+        <div class="card"><h3>Day Tour</h3><p>Enjoy swimming and beach activities during the day.</p></div>
+        <div class="card"><h3>Overnight Stay</h3><p>Spend the night in a relaxing seaside environment.</p></div>
+        <div class="card"><h3>Cottage Rental</h3><p>Comfortable cottages for family and barkada gatherings.</p></div>
+        <div class="card"><h3>Tent Pitching</h3><p>Camping area for guests who love outdoor adventures.</p></div>
+        <div class="card"><h3>Events</h3><p>Perfect venue for birthdays, reunions, and special occasions.</p></div>
+        <div class="card"><h3>Photo Spots</h3><p>Scenic beachfront views ideal for memorable photos.</p></div>
+    </div>
+</section>
+
+<section id="video">
+    <h2>60-Second Promo Video</h2>
+    <p style="margin-bottom:15px;">
+        Watch our short promo video below.
+    </p>
+
+    <div class="video-container">
+        <video controls autoplay muted>
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> 0926-403-9645</p>
+    <p><strong>Email:</strong> ilarinabeach@gmail.com</p>
+    <p><strong>Location:</strong> Sitio Caragman, Barangay Banawang, Bagac, Bataan</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Ilarina Beach Resort. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
